@@ -2,7 +2,9 @@ Logistic regression is a statistical method used for binary classification, whic
 
 The logistic function is defined as:
 
-![[sigmoid function.webp]]
+![sigmoid function](https://github.com/NeuralNoble/Logistic-Regression/assets/156664113/3d84a670-2fae-45b7-9328-4349bdf3df74)
+
+
 
 where z = β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ
 
@@ -27,7 +29,9 @@ Logistic regression assumes a linear relationship between the input features and
 1. Every line has a positive side and a negative side.
 2. Put the point in the equation of line and if the resultant is greater than 0 then it lies on the positive side and if it is less than 0 then it is negative .
 
- ![[WhatsApp Image 2024-03-18 at 11.54.58 AM 1.jpeg]]
+ <img src="https://github.com/NeuralNoble/Logistic-Regression/assets/156664113/2c54c967-bbd1-4091-806e-1d620f638479" alt="WhatsApp Image 2024-03-18 at 11 54 58 AM 1" height="400px" width="400"><br>
+
+
 
 
 
@@ -52,8 +56,11 @@ lets write the algorithm now:
 
 W is the weight vector 
 X is the input vector 
-![[w, J-1.jpg]]
-![[w, J-2.jpg]]
+
+<img src="https://github.com/NeuralNoble/Logistic-Regression/assets/156664113/254b9114-b858-409a-aea9-f6848bd78e10" height="450px" width="450">
+
+<img src="https://github.com/NeuralNoble/Logistic-Regression/assets/156664113/c8964bbe-33c0-4c95-b5a0-1507aeaa7471" height="450px" width="450"><br>
+
 
 
 
@@ -67,6 +74,7 @@ In binary classification problems, where there are only two classes (e.g., posit
 $$
 \text{Log Loss} = -\frac{1}{N} \sum_{i=1}^{N} \left( y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right)
 $$
+
 Explanation:
 - `N` is the number of observations in the dataset.
 - `y_i` is the actual label for the `i`th observation (0 or 1).
@@ -76,17 +84,18 @@ Explanation:
 
 $$
 p_i = \sigma(z_i) = \frac{1}{1 + e^{-z_i}}
-
 $$
+
 $$
 z = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n
 $$
 
-Now our goal is to find the values of $$\beta_0 ,\beta_1,\beta_2$$ and so on such that log loss is minimized . The log loss function doesn't have any closed form solution . so we will use Gradient descent to minimize the log loss.
+<br>Now our goal is to find the values of $$\beta_0 ,\beta_1,\beta_2$$ and so on such that log loss is minimized . The log loss function doesn't have any closed form solution . so we will use Gradient descent to minimize the log loss.
 
- 
+<img src="https://github.com/NeuralNoble/Logistic-Regression/assets/156664113/c3e9a85d-b7ed-4784-b650-dfbb4675f508" height="550px" width="450">
+
+<img src="https://github.com/NeuralNoble/Logistic-Regression/assets/156664113/d74c7197-9931-42f5-a4d3-7f6a2837bbab" height="550px" width="450">
 
 
-![[d Spoil p-1.jpg]]
 
-![[d Spoil p-2.jpg]]
+
