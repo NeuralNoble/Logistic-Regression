@@ -1,3 +1,5 @@
+# Logistic Regression
+
 Logistic regression is a statistical method used for binary classification, which means it's used to predict the probability of a binary outcome (e.g., yes/no, true/false, 1/0).it is a classification algorithm .The term "logistic" refers to the logistic function(or sigmoid function) that is used to model the relationship between the independent variables (predictors) and the dependent variable (response or outcome). The logistic function, also known as the sigmoid function, is an S-shaped curve that maps any real-valued number to a value between 0 and 1.
 
 The logistic function is defined as:
