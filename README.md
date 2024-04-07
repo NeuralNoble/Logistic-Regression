@@ -15,9 +15,9 @@ Logistic regression is  a linear model. The linearity in logistic regression ref
 
 The logistic regression model makes predictions by applying a linear transformation to the input features and then passing the result through a logistic (sigmoid) function to obtain the probability of belonging to a particular class. Mathematically, the logistic regression model can be represented as:
 
-`$$
+$$
 P(y = 1 | \mathbf{x}) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n)}}
-$$`
+$$
 
 - `P(y = 1 | x)` represents the probability of the outcome variable `y` being 1 given the input features `x`.
 - `β₀, β₁, β₂, ..., βₙ` are the coefficients (parameters) of the model.
